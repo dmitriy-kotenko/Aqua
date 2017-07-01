@@ -102,5 +102,5 @@ namespace {
 	const SwitchTime Settings::WeekendTurnOffCO2 = WeekendTurnOffLight.AddMinutes(-TurnOffCO2LeadMinutes);
 
 	const float Settings::DesiredTemperature = 25;
-	const float Settings::SwitchDelta = 0.4;
+	const float Settings::SwitchDelta = 0.3;
 }

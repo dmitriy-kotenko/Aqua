@@ -85,22 +85,22 @@ namespace {
 		}
 	};
 
-	const SwitchTime Settings::TurnOnLight = SwitchTime(9, 45);
+	const SwitchTime Settings::TurnOnLight = SwitchTime(10, 0);
 	const SwitchTime Settings::TurnOffLightLunch = SwitchTime(14, 30);
 	const SwitchTime Settings::TurnOnLightLunch = SwitchTime(15, 45);
 	const SwitchTime Settings::TurnOffLight = SwitchTime(21, 15);
 
 	const SwitchTime Settings::WeekendTurnOnLight = SwitchTime(11, 30);
-	const SwitchTime Settings::WeekendTurnOffLight = SwitchTime(21, 45);
+	const SwitchTime Settings::WeekendTurnOffLight = SwitchTime(21, 30);
 
-	const SwitchTime Settings::TurnOnPump = SwitchTime(2, 0);
-	const SwitchTime Settings::TurnOffPump = SwitchTime(6, 0);
+	const SwitchTime Settings::TurnOnPump = SwitchTime(1, 0);
+	const SwitchTime Settings::TurnOffPump = SwitchTime(8, 0);
 
 	const SwitchTime Settings::TurnOnCO2 = TurnOnLight.AddMinutes(-TurnOnCO2LeadMinutes);
 	const SwitchTime Settings::TurnOffCO2 = TurnOffLight.AddMinutes(-TurnOffCO2LeadMinutes);
 	const SwitchTime Settings::WeekendTurnOnCO2 = WeekendTurnOnLight.AddMinutes(-TurnOnCO2LeadMinutes);
 	const SwitchTime Settings::WeekendTurnOffCO2 = WeekendTurnOffLight.AddMinutes(-TurnOffCO2LeadMinutes);
 
-	const float Settings::DesiredTemperature = 25;
+	const float Settings::DesiredTemperature = 25.5;
 	const float Settings::SwitchDelta = 0.3;
 }
